@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C676E78200ED49400298613 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C676E77200ED49300298613 /* UIKit.framework */; };
 		8C81EDE820098C1B009565A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EDE720098C1B009565A0 /* AppDelegate.swift */; };
 		8C81EDEA20098C1B009565A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EDE920098C1B009565A0 /* ViewController.swift */; };
 		8C81EDED20098C1B009565A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C81EDEB20098C1B009565A0 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8C81EDF220098C1B009565A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C81EDF020098C1B009565A0 /* LaunchScreen.storyboard */; };
 		8C81EDFD20098C1B009565A0 /* BlueStream_PoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EDFC20098C1B009565A0 /* BlueStream_PoCTests.swift */; };
 		8C81EE0820098C1B009565A0 /* BlueStream_PoCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EE0720098C1B009565A0 /* BlueStream_PoCUITests.swift */; };
+		8CB52ABE200FE9DA001BB8C8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C676E77200ED49300298613 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C81EDE420098C1B009565A0 /* BlueStream-PoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueStream-PoC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81EDE720098C1B009565A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C81EDE920098C1B009565A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8C81EE0320098C1B009565A0 /* BlueStream-PoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlueStream-PoCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81EE0720098C1B009565A0 /* BlueStream_PoCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueStream_PoCUITests.swift; sourceTree = "<group>"; };
 		8C81EE0920098C1B009565A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB52ABE200FE9DA001BB8C8 /* CoreData.framework in Frameworks */,
+				8C676E78200ED49400298613 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C676E76200ED49300298613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */,
+				8C676E77200ED49300298613 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C81EDDB20098C1B009565A0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 				8C81EDFB20098C1B009565A0 /* BlueStream-PoCTests */,
 				8C81EE0620098C1B009565A0 /* BlueStream-PoCUITests */,
 				8C81EDE520098C1B009565A0 /* Products */,
+				8C676E76200ED49300298613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +113,11 @@
 		8C81EDE620098C1B009565A0 /* BlueStream-PoC */ = {
 			isa = PBXGroup;
 			children = (
+				8C81EDF020098C1B009565A0 /* LaunchScreen.storyboard */,
 				8C81EDE720098C1B009565A0 /* AppDelegate.swift */,
 				8C81EDE920098C1B009565A0 /* ViewController.swift */,
 				8C81EDEB20098C1B009565A0 /* Main.storyboard */,
 				8C81EDEE20098C1B009565A0 /* Assets.xcassets */,
-				8C81EDF020098C1B009565A0 /* LaunchScreen.storyboard */,
 				8C81EDF320098C1B009565A0 /* Info.plist */,
 			);
 			path = "BlueStream-PoC";
@@ -363,10 +379,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.2;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -414,9 +430,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.2;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -429,11 +445,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRK5Z4K725;
 				INFOPLIST_FILE = "BlueStream-PoC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IFT402.BlueStream-PoC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,11 +461,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRK5Z4K725;
 				INFOPLIST_FILE = "BlueStream-PoC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IFT402.BlueStream-PoC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

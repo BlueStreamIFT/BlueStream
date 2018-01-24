@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+//-------------------------------------------------------------------------------
+// Crash/Exception Handler(s)
+//-------------------------------------------------------------------------------
+    
+// Generic handler for NSExceptions; Currently dumps a crash log and exits app upon encountering an error.
 
+// **Currently commented out due to "NSPersistentContainer" requiring iOS 10 or higher**
+/*
+    lazy var persistentContainer: NSPersistentContainer =
+    {
+        let container = NSPersistentContainer(name: "BlueStream")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError?
+            {
+            fatalError("Something went wrong... Closing app \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+*/
 }
-
