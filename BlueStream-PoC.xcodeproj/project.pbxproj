@@ -15,6 +15,8 @@
 		8C81EDF220098C1B009565A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C81EDF020098C1B009565A0 /* LaunchScreen.storyboard */; };
 		8C81EDFD20098C1B009565A0 /* BlueStream_PoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EDFC20098C1B009565A0 /* BlueStream_PoCTests.swift */; };
 		8C81EE0820098C1B009565A0 /* BlueStream_PoCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81EE0720098C1B009565A0 /* BlueStream_PoCUITests.swift */; };
+		8C8FBC22203A38B60036F90B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FBC21203A38B50036F90B /* Inceptionv3.mlmodel */; };
+		8C8FBC24203A38E10036F90B /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8FBC23203A38E00036F90B /* CoreML.framework */; };
 		8CB52ABE200FE9DA001BB8C8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		8C81EE0320098C1B009565A0 /* BlueStream-PoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlueStream-PoCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C81EE0720098C1B009565A0 /* BlueStream_PoCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueStream_PoCUITests.swift; sourceTree = "<group>"; };
 		8C81EE0920098C1B009565A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8FBC21203A38B50036F90B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../CoreML Models/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
+		8C8FBC23203A38E00036F90B /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8FBC24203A38E10036F90B /* CoreML.framework in Frameworks */,
 				8CB52ABE200FE9DA001BB8C8 /* CoreData.framework in Frameworks */,
 				8C676E78200ED49400298613 /* UIKit.framework in Frameworks */,
 			);
@@ -83,6 +88,7 @@
 		8C676E76200ED49300298613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C8FBC23203A38E00036F90B /* CoreML.framework */,
 				8CB52ABD200FE9DA001BB8C8 /* CoreData.framework */,
 				8C676E77200ED49300298613 /* UIKit.framework */,
 			);
@@ -92,6 +98,7 @@
 		8C81EDDB20098C1B009565A0 = {
 			isa = PBXGroup;
 			children = (
+				8C8FBC21203A38B50036F90B /* Inceptionv3.mlmodel */,
 				8C81EDE620098C1B009565A0 /* BlueStream-PoC */,
 				8C81EDFB20098C1B009565A0 /* BlueStream-PoCTests */,
 				8C81EE0620098C1B009565A0 /* BlueStream-PoCUITests */,
@@ -276,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C81EDEA20098C1B009565A0 /* ViewController.swift in Sources */,
+				8C8FBC22203A38B60036F90B /* Inceptionv3.mlmodel in Sources */,
 				8C81EDE820098C1B009565A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRK5Z4K725;
 				INFOPLIST_FILE = "BlueStream-PoC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IFT402.BlueStream-PoC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRK5Z4K725;
 				INFOPLIST_FILE = "BlueStream-PoC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IFT402.BlueStream-PoC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
